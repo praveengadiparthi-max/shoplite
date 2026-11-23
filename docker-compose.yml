@@ -12,3 +12,8 @@ services:
       PRODUCT_SERVICE_URL: http://product-service:8001
     depends_on:
       - product-service
+
+  frontend:
+    build: ./services/frontend
+    ports:
+      - "3000:80"
